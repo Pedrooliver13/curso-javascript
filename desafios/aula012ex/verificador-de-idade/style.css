@@ -1,0 +1,10 @@
+.fontezero{font-size: 0em;}
+body{background-color: #222121bd;text-align: center;}
+img{max-width: 100%;margin: 0 auto;}
+/* HEADER */
+header{display: flex;align-items: center;justify-content: center;color: white;}
+/* SECTION */
+section{ background-color: white;border-radius: 8px;box-shadow: 3px 5px 10px #0000007e; margin:0 auto;max-width: 800px;padding: 20px;}
+#res{display: grid;font-weight: 700;font-size: 20px;}
+/* FOOTER */
+footer{font-style: italic;font-size: 18px; color: white;}

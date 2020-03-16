@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificador Cesinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Verificador do Cesinha</h1>
+    </header>
+    <!-- SECTION -->
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtanos" id="txtano" placeholder="ex:1989">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="man" checked>
+                <label for="man">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha as Informações Acima!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Pedro Oliveira</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio</title>
+    <style>
+        *{padding: 0; margin: 0;outline: 0;text-align: center;}
+        h1{display: flex;justify-content: center;align-items: center;background-color: tomato;color: white; height: 60px;}
+        .flex{display: flex;flex-wrap: wrap;align-items: center; justify-content: center;padding: 50px;}
+        p{background-color: teal;color: white;}
+
+        input{ padding: 10px;border-radius: 8px;}
+    </style>
+    
+</head>
+<body>
+    <h1>Descubra se Você é Estrangeiro!</h1>
+    <div class="flex">
+        <input type="text" name="txt" id="pais" placeholder="ex:Brasil">
+        <input type="button" value="verificar" onclick="procurar()">
+    </div>
+    <div id="res"></div>
+    
+    
+
+    <script>
+        function procurar(){
+            var txt = document.querySelector('input#pais')//PEGA PELO ID
+            var res = document.querySelector('div#res')//PEGA PELO ID
+            var país = (txt.value)//CONVERTENDO O TEXTO PARA A VARIAVEL A SER USADA!
+            res.innerHTML = `Seu País é o(a) <strong>${país}</strong>.`//FAZ UMA INTERAÇÃO
+
+            if (país == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`//(TRUE)
+            }else{
+                res.innerHTML += ` <p>Você é <strong>Estrangeiro</strong>!</p>`//(FALSE)
+            }
+        }
+        //(+=)PARA QUANDO FOR "STRING" ELE VAI FAZER UMA CONCATENAÇÃO.
+    </script>
+    
+</body>
+</html>

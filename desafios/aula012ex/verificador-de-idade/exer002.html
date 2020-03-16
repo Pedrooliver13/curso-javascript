@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Verificador de idade.</h1>
+    </header>
+    <!-- SECTION -->
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="nameano" id="txtano" min="0" >
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>Preencha os Requisitos Acima!</p>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; - Pedro Oliveira</p>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

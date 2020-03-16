@@ -1,0 +1,8 @@
+body{padding: 0;margin: 0;background-color: #00a2ff;font-weight: 300;font-size: 15pt;}
+/* HEADER */
+header{display: flex;align-items: center;justify-content: center;color:white;}
+/* SECTION */
+section{background-color: white;border-radius: 8px;box-shadow: 3px 3px 10px #333; max-width: 600px;margin: 0 auto; text-align: center;}
+div{padding: 10px;}
+/* FOOTER */
+footer{display: flex; align-items: center;justify-content: center;color: white;}
