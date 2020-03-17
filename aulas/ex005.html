@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{background-color: tomato; color: white; font-family: arial;font-size: 15pt;}
+
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!(estudos em DOM)</h1>
+    <p>Iniciando Aulas em <strong>DOM</strong></p>
+    <p>Parágrafo 2</p>
+    <div class="msg">Clique em Mim</div>
+    <div id="id">Div 2</div>
+    <div id="sel">Coisa legal Aqui! 3</div>
+    <div class="sel2">Coisa legal Aqui! 4</div>
+    <script>
+        /* SELECIONANDO O ELEMENTO POR ID (COMO NÃO ESTÁ NO PLURAL NÃO PRECISA DE '[]') */
+        var d = window.document.getElementById('id')
+        document.write(d.innerHTML)
+        d.style.color = 'teal'
+        d.style.background = 'yellow'
+        /* SELECIONADO O ELEMENTO POR TAG (COM O '[]' ESCOLHE O FILHO)*/
+       var msg = window.document.getElementsByTagName('p')[0]
+       document.write(msg.innerHTML)/* ESSE RESPEITA O ELEMENTO FILHOS (InnerHtml) */
+       document.write(msg.innerText)/* ESSE NÃO RESPEITA O ELEMENTOS FILHOS (InnerText)*/
+       msg.style.color = 'yellowgreen'
+       msg.style.background = 'blue'
+       /* SELECIONANDO POR SELECTOR ! MAIS RECENTE !*/
+       var sel = document.querySelector('div#sel')/* ID É COM (#) */
+       var sel2 = document.querySelector('div.sel2')/* CLASS É COM (.) */
+       sel2.style.color = 'brown'
+       sel.style.color =  'black'
+    </script>
+
+
+</body>
+</html>

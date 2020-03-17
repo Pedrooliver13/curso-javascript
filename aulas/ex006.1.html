@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div{background-color: tomato; color: white; max-width: 200px; height: 200px; font:normal 15pt arial;line-height: 200px; text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')/* NÃO RECOMENDADO */
+        /* ADICIONA A FUNÇÃO 'DOM' SEM NECESSÁRIO ESTAR NO HTML */
+        a.addEventListener('click' , clicar,)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',sair)
+        
+        /* FUNÇÕES */
+        function clicar() {
+            a.innerText = "olá mundo!"/* MODIFICA O TEXTO */
+            a.style.background = 'teal'/* MODIFICA O ESTILO */
+        }
+        function entrar() {
+            a.innerText = "entrou!"
+            a.style.background = "brown"
+        }
+        function sair() {
+            a.innerText = "Saiu!"
+            a.style.background = "tomato"
+        }
+    </script>
+
+</body>
+</html>
